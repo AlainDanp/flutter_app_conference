@@ -31,26 +31,7 @@ class HomePage extends StatelessWidget {
               textAlign: TextAlign.center,
             ),
             Padding(padding: EdgeInsets.only(top: 20)),
-            ElevatedButton.icon(
-              style: ButtonStyle(
-                  padding: MaterialStatePropertyAll(EdgeInsets.all(20)),
-                  backgroundColor: MaterialStatePropertyAll(Colors.green)
-              ),
-              onPressed: (){
-                Navigator.push(
-                    context,
-                    PageRouteBuilder(
-                      pageBuilder: (_, __, ___) => EventPage(),
-                    )
-                );
-              },
-              label: Text("Afficher le planing",
-                style: TextStyle(
-                  fontSize: 20,
-                ),
-              ),
-              icon: Icon(Icons.calendar_month),
-            )
+
           ],
         )
     );
